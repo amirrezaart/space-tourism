@@ -22,6 +22,7 @@ function Tab(props) {
               {data}
             </li>
           );
+
         })}
       </ul>
     </div>
