@@ -55,3 +55,15 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.destination-panel {
+  font-family: "Bellefair-Regularel";
+  padding: 0 2rem;
+}
+.destination-panel h1 {
+  font-family: "Bellefair-Regularel";
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.destination-panel p {
+  font-family: "Barlow-Regular";
+}

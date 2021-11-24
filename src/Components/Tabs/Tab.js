@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Style.css'
 
 function Tab(props) {
-  const { titles } = props;
+  const { titles, children } = props;
   const [selectedTab, setSelectedTab] = useState(0);
   const planets = ['moon', 'mars', 'europa', 'titan'];
 
@@ -22,9 +22,9 @@ function Tab(props) {
               {data}
             </li>
           );
-
         })}
       </ul>
+      {children}
     </div>
   );
 }
