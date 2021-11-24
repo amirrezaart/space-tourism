@@ -1,38 +1,98 @@
-.App {
+.homepage {
+  background-image: url("./assets/home/background-home-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.destination {
+  background-image: url("./assets/destination/background-destination-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.destination h4 {
+  font-weight: 400;
+  font-family: "BarlowCondensed-Regular";
+  letter-spacing: 0.15rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.destination h4 span {
+  color: #d0d6f9;
+  display: inline-block;
+  padding: 0 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  text-align: center;
+  margin: 47px 20px;
+}
+header p.travel {
+  color: #d0d6f9;
+  font-size: 16px;
+  font-family: "BarlowCondensed-Regular";
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  line-height: 19px;
+  padding: 5px 0;
+  opacity: 0.8;
+}
+header h1 {
+  color: #fff;
+  font-size: 80px;
+  font-family: "Bellefair-Regular";
+  text-transform: uppercase;
+  line-height: 100px;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+header p.let {
+  color: #d0d6f9;
+  font-family: "Barlow-Regular";
+  font-size: 15px;
+  line-height: 25px;
+  padding: 10px 20px;
+  opacity: 0.8;
+}
+.explore {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.explore .explore-radius {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: #fff;
+  margin: 18px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.explore-radius h1 {
+  font-size: 20px;
+  font-family: "Bellefair-Regular";
+  text-transform: uppercase;
+  color: #0b0d17;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+}
+/* media */
+@media screen and (min-width: 375px) {
+  .homepage {
+    background-image: url("../src/assets/home/background-home-tablet.jpg");
   }
-  to {
-    transform: rotate(360deg);
+  .destination {
+    background-image: url("../src/assets/destination/background-destination-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .homepage {
+    background-image: url("../src/assets/home/background-home-desktop.jpg");
+  }
+  .destination {
+    background-image: url("../src/assets/destination/background-destination-desktop.jpg");
   }
 }
