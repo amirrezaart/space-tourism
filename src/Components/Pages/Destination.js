@@ -26,7 +26,6 @@ function Destination() {
           <div>Hello</div>
         </Panel> */}
       </Tab>
-
     </div>
   );
 }
