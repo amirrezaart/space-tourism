@@ -18,7 +18,7 @@
   cursor: pointer;
   border-bottom: 2px solid #d0d6f9;
 }
-.tabs li:active {
+.tabs li.selected {
   border-bottom: 2px solid #fff;
 }
 .container {
@@ -57,7 +57,8 @@
 }
 .destination-panel {
   font-family: "Bellefair-Regularel";
-  padding: 0 2rem;
+  padding: 2rem 2rem;
+  margin-bottom: 4rem;
 }
 .destination-panel h1 {
   font-family: "Bellefair-Regularel";
@@ -66,4 +67,47 @@
 }
 .destination-panel p {
   font-family: "Barlow-Regular";
+  color: #d0d6f9;
+  font-size: 15px;
+  line-height: 167%;
+  padding: 0 1rem;
 }
+
+.destination-panel hr {
+  height: 1px;
+  border: none;
+  background-color: #383b4b;
+  margin: 1.5rem 0;
+}
+.destination-panel .distance {
+  font-size: 0.9rem;
+  font-family: "BarlowCondensed-Regular";
+  letter-spacing: 0.15rem;
+  margin: 1rem 0;
+}
+.destination-panel span {
+  font-family: "Bellefair-Regularel";
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem;
+}
+.destination-panel .travel-time {
+  font-size: 0.9rem;
+  font-family: "BarlowCondensed-Regular";
+  letter-spacing: 0.15rem;
+  margin-top: 1rem;
+}
+/* .slide {
+  animation: slide 1s ease-out forwards;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(60px);
+  }
+} */
