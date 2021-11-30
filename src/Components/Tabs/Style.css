@@ -21,12 +21,65 @@
 .tabs li.selected {
   border-bottom: 2px solid #fff;
 }
+.tabs .disk {
+  background: url(../../assets/tabs/Oval_3.png) no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+}
+.image-container .planet-image {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  animation: slide-rotate 2s ease forwards;
+}
+.image-container .crew-image {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  animation: slide 2s ease forwards;
+}
+.image-container .show {
+  display: block;
+}
+.container .detail {
+  display: none;
+  animation: slide 2s ease forwards;
+}
+.container .detail-show {
+  display: block;
+}
+@keyframes slide-rotate {
+  from {
+    transform: translateX(-100px) rotateZ(0deg);
+  }
+  to {
+    transform: translateX(0px) rotateZ(360deg);
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/*
 .planet {
   display: flex;
   align-items: center;
@@ -55,11 +108,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+*/
 .destination-panel {
   font-family: "Bellefair-Regularel";
   padding: 2rem 2rem;
   margin-bottom: 4rem;
 }
+
 .destination-panel h1 {
   font-family: "Bellefair-Regularel";
   font-size: 3.5rem;
@@ -100,14 +155,3 @@
   letter-spacing: 0.15rem;
   margin-top: 1rem;
 }
-/* .slide {
-  animation: slide 1s ease-out forwards;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(60px);
-  }
-} */
